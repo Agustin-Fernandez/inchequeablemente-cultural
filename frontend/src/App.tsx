@@ -4,6 +4,7 @@ import PostGrid from './components/PostGrid';
 import PostModal from './components/PostModal';
 import { fetchPosts } from './api';
 import type { Post } from './types';
+import logo from "/logo.png";
 
 function App() {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -17,7 +18,7 @@ function App() {
       setPosts(data);
       setError('');
     } catch (err) {
-      setError('Failed to load posts');
+      setError('Error cargando publicaciones.');
       console.error(err);
     } finally {
       setLoading(false);
@@ -45,11 +46,13 @@ function App() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="/logo.png"
+              src={logo}
               alt="Inchequeablemente Cultural Logo"
               className="object-contain w-10 h-10"
             />
-            <h1 className="text-3xl tracking-wide" style={{ fontFamily: 'Sigmar, cursive' }}>Rincón Inchequeable</h1>
+            <h1 className="text-3xl tracking-wide" style={{ fontFamily: 'Sigmar, cursive' }}>
+              Rincón Inchequeable
+            </h1>
           </div>
 
           <div className="flex items-center gap-10">
