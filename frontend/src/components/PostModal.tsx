@@ -28,7 +28,8 @@ export default function PostModal({ post, onClose }: PostModalProps) {
         <div className="flex max-h-[90vh] overflow-hidden max-md:flex-col">
           <div className="flex-1 bg-black flex items-center justify-center overflow-hidden max-md:max-h-[50vh]">
             <img
-              src={`/uploads/${post.image_path}`}
+              //src={`/uploads/${post.image_path}`}
+              src={post.image_path}
               alt={post.title}
               className="max-w-full max-h-[90vh] object-contain"
             />
