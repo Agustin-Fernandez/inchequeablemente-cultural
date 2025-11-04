@@ -37,8 +37,8 @@ export const fetchPosts = async (): Promise<Post[]> => {
       description:
         'Fui con mi hijo a la PokéFan Fest en San Nicolás de los Arroyos y todavía seguimos hablando del día. Había stands con cartas, juegos, competencias y hasta un par de artistas que hacían dibujos en vivo. Lo que más disfrutó mi hijo fue el torneo de trivia (se sabía todas las respuestas jajaja). El evento estaba muy bien organizado. Si lo vuelven a hacer, seguro volvemos.',
       image_path: img1,
-      social_media_links: '@inchequeablementecultural',
-      created_at: '2024-06-15T10:00:00Z',
+      social_media_links: '@pokefanfestival',
+      created_at: '2025-10-14T10:00:00Z',
     },
     {
       id: 2,
@@ -46,7 +46,6 @@ export const fetchPosts = async (): Promise<Post[]> => {
       description:
         'Anoche me di una vuelta por Festbar, en Villa Constitución, para ver una “varieté artística” que me habían recomendado, y la verdad fue una sorpresa enorme. Arrancaron con un grupo de folclore que metió unas chacareras tremendas, después subió una chica con temas pop y una voz increíble, y más cosas. Lo lindo fue la mezcla, tipo nadie competía con nadie, cada presentación sumaba algo distinto. Entre tema y tema, la gente charlaba, se reía, aplaudía con ganas.',
       image_path: img2,
-      social_media_links: '@inchequeablementecultural',
       created_at: '2024-06-14T18:30:00Z',
     },
     {
